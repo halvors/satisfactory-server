@@ -39,7 +39,7 @@ fi
 printf "Setting autosave interval to %ss\\n" "${AUTOSAVEINTERVAL}"
 set_ini_val "GameUserSettings.ini" "\/Script\/FactoryGame\.FGGameUserSettings" "FG.AutosaveInterval" "${AUTOSAVEINTERVAL}"
 
-printf "Setting network quality to %ss\\n" "${NETWORKQUALITY}"
+printf "Setting network quality to %s\\n" "${NETWORKQUALITY}"
 set_ini_val "GameUserSettings.ini" "\/Script\/FactoryGame\.FGGameUserSettings" "FG.NetworkQuality" "${NETWORKQUALITY}"
 
 [[ "${DISABLESEASONALEVENTS,,}" == "true" ]] && DISABLESEASONALEVENTS="1" || DISABLESEASONALEVENTS="0"
